@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+        }
+
+        tr.escuro {
+            background-color: rgb(210, 210, 210);
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 4px;
+            text-align: left; /*alinhamento horizontal*/
+            vertical-align: bottom; /*alinhamento vertical*/
+        }
+
+        .numero {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minhas Primeiras Tabela</h1>
+    <!--
+        Hierarquia de tabelas (Simples)
+        Table = tabela
+            Table row = linha de tabela
+                table header = cabeçalho de tabela
+                table data = dado de tabela
+    -->
+
+    <table>
+        <tr class="escuro"><!--Primeira Linha-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <TD class="numero">C2</TD>
+        </tr>
+        <tr class="escuro">
+            <td>A3</td>
+            <td>B3</td>
+            <TD class="numero">C3</TD>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <TD>C4</TD>
+        </tr>
+        <tr class="escuro">
+            <td >A5</td>
+            <td>B5</td>
+            <TD>C5</TD>
+        </tr>
+        <tr>
+            <td>A6</td>
+            <td>B6</td>
+            <TD>C6</TD>
+        </tr>
+        <tr class="escuro">
+            <td>A7</td>
+            <td>B7</td>
+            <TD>C7</TD>
+        </tr>
+    </table>
+
+</body>
+</html>
